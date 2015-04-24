@@ -1,5 +1,5 @@
- import scala.math.min
- import scala.io.Source
+import scala.math.min
+import scala.io.Source
 
     object arrays {
         
@@ -13,7 +13,7 @@
         def readFileIntoArray(filename: String, a: Array[Int]) {
              var fileneededtoberead = Source.fromFile(filename)
              var i = 0
-             for (line <- fileneededtoberead.getLines) {
+                         for (line <- fileneededtoberead.getLines) {
              if (i < a.length)
                 a(i) = line.toInt
                 i = i + 1
@@ -23,8 +23,8 @@
            require(a.length > 0)
             val min = a.min
             return min
-  }
-        def countEven(a: Array[Int]): Int = {
+   }
+    def countEven(a: Array[Int]): Int = {
             var i = 0
             for (x <- a) { if (x % 2 == 0) { i = i + 1 } }
                 i
@@ -66,11 +66,9 @@
      require(position < a.length)
 
     
-     -1 // replace with your code, which should return Int
+    -1 // replace with your code, which should return Int
    }
-        def getRunsAsString(a: Array[Int]): String = {
+    def getRunsAsString(a: Array[Int]): String = {
      ""
    }
     }
-
-        

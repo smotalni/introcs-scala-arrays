@@ -72,11 +72,11 @@ class RationalScalaTestFlatSpecMatchers extends FlatSpec with Matchers {
   }
 
   "pairwiseAdd()" should "add corresponding elements of arrays" in {
-    val a = Array(1, 2, 4, 6, 8, 10)
+    val a = Array(1, 2, 4, 6, 8, 10, 13)
     val b = Array(1, 2, 4, 6, 8, 10, 13)
-    val result = Array.fill(5)(0)
+    val result = Array.fill(7)(0)
     pairwiseAdd(a, b, result)
-    result should be (Array(2, 4, 8, 12, 16))
+    result should be (Array(2, 4, 8, 12, 16, 20, 26))
   }
 
   "newPairwiseAdd()" should "add corresponding elements of arrays" in {
